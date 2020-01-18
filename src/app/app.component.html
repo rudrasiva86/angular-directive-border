@@ -1,4 +1,22 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
+<div border>
+  This is a div with just the 'border' directive and no additional attributes
+</div>
+
+<p border bColor='#ff00ff'>
+  This is a paragraph with 'border' directive and bColor attribute
 </p>
+
+<div border bStyle='dotted' bColor='#ff0000' bRadius='20' bPadding='20' bMargin='20' bWidth='5'>
+  This is an example div with all possible inputs to the 'border' directive
+  <ol>
+    <li>bColor='#ff0000'</li>
+    <li>bRadius='20'</li>
+    <li>bPadding='20'</li>
+    <li>bMargin='20'</li>
+    <li>bWidth='5'</li>
+  </ol>
+</div>
+
+<div border bStyle='dotted double dashed solid' bColor='black' bWidth='4'>
+  This is a funny div with different styles on each side.
+</div>
