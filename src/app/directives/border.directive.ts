@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostBinding, Input } from '@angular/core';
+import { Directive, HostBinding, Input } from '@angular/core';
 
 @Directive({
   selector: '[border]'
@@ -10,8 +10,6 @@ export class BorderDirective {
   @Input() bMargin: number = 10;
   @Input() bColor: string = 'lightgrey';
   @Input() bWidth: number = 2;
-
-  constructor(private el: ElementRef) { }
 
   @HostBinding('style.borderStyle')
   get style() {
